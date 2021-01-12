@@ -12,12 +12,12 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Arrays;
 
 @RestController
-public class Country {
+ public class Country {
     @Autowired
     RestTemplate restTemplate;
 
-    @RequestMapping(value = "/ip/5.6.7.8/country")
-    public String CountryList() {
+ @RequestMapping(value = "/ip/5.6.7.8/country")
+  public String CountryList() {
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         HttpEntity<String> entity = new HttpEntity<String>(headers);
