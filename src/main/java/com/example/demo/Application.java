@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class Application 
+public class Task2 
 {
 	public static void main(String[] args) 
 	{
