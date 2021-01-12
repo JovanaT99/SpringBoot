@@ -24,8 +24,6 @@ import java.util.Arrays;
 
         return restTemplate.exchange(
                 "https://api.ip2country.info/ip?5.6.7.8", HttpMethod.GET, entity, String.class).getBody();
-
         //http://localhost:9002/ip/5.6.7.8/country
-
     }
 }
