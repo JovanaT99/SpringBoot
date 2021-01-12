@@ -1,6 +1,5 @@
 package com.example.demo;
 
-
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -15,6 +14,7 @@ import org.springframework.web.servlet.config.annotation.ContentNegotiationConfi
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.Collections;
+
 //da bi Content-Type bio JSON
 @Configuration
 class WebMvcConfiguration implements WebMvcConfigurer {
