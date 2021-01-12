@@ -1,6 +1,5 @@
 package com.example.demo;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
@@ -10,8 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-
-
 import java.util.Arrays;
 
 @RestController
@@ -20,7 +17,7 @@ public class Country {
     RestTemplate restTemplate;
 
     @RequestMapping(value = "/ip/5.6.7.8/country")
-    public String getProductList() {
+    public String CountryList() {
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         HttpEntity<String> entity = new HttpEntity<String>(headers);
@@ -30,4 +27,5 @@ public class Country {
 
         //http://localhost:9002/ip/5.6.7.8/country
 
-    }}
+    }
+}
