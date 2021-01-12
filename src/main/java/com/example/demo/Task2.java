@@ -26,15 +26,17 @@ class WebMvcConfiguration implements WebMvcConfigurer {
 }
 
 @RestController
-public class Task11 {
+public class Task2 
+{
     final
     RestTemplate restTemplate;
 //Koriscenje spoljnog api-ja
-    public Task11(RestTemplate restTemplate) {
+    public Task2(RestTemplate restTemplate)
+    {
 
         this.restTemplate = restTemplate;
     }
-
+    
     @RequestMapping(value = "/search")
     public String getProductList() {
         HttpHeaders headers = new HttpHeaders();
@@ -49,7 +51,7 @@ public class Task11 {
         //localhost:9005/search
         //api tvmaze searcha
     }
-
+//search po id-iju
     @GetMapping("/search/{id}")
     public String getById(@PathVariable("id") String id) {
         HttpHeaders headers = new HttpHeaders();
@@ -65,12 +67,3 @@ public class Task11 {
         //localhost:9005/search/139
     }
 }
-
-
-
-
-
-
-
-
-
