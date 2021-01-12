@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Arrays;
 
 @RestController
- public class Country {
+ public class Task1 {
     @Autowired
     RestTemplate restTemplate;
 
