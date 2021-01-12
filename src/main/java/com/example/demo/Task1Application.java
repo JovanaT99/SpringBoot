@@ -11,7 +11,7 @@ public class Task1Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Task1Application.class, args);
 	}
-	
+	//Bean anotacija govori Springu da je u konfiguracijskoj klasi metoda koja je anotirana tom anotacijom treba da bude registrovana kao bean.
  @Bean
  public RestTemplate getRestTemplate() {
 	 
